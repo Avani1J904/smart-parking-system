@@ -1,0 +1,3 @@
+# Only two libraries are needed. Everything else (database, hashing, tests) ships with Python/Flask.
+Flask>=3.0      # the web framework (also brings in Werkzeug, used for password hashing)
+PyJWT>=2.8      # creates and checks login tokens

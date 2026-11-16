@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ParkEase — Smart Parking Management</title>
+  <meta name="description" content="Smart Parking Management System frontend">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container py-2">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <span class="brand-mark"><i class="bi bi-p-square-fill"></i></span>
+      <span class="brand-text">ParkEase</span>
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="parking.html">Find Parking</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-primary-custom" href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container py-5">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <span class="badge badge-soft bg-soft text-primary mb-3"><i class="bi bi-lightning-charge-fill me-1"></i> Smart • Fast • Contactless</span>
+        <h1 class="hero-title mb-4">Park smarter.<br>Arrive stress-free.</h1>
+        <p class="hero-subtitle mb-4">A modern Smart Parking Management System for finding available slots, booking in advance, and managing every parking activity from one dashboard.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="parking.html" class="btn btn-primary-custom btn-lg">Find a Parking Slot <i class="bi bi-arrow-right ms-1"></i></a>
+          <a href="register.html" class="btn btn-outline-custom btn-lg">Create Account</a>
+        </div>
+        <div class="d-flex flex-wrap gap-4 mt-4 text-muted-custom">
+          <span><i class="bi bi-check-circle-fill text-success me-1"></i> Real-time slot status</span>
+          <span><i class="bi bi-check-circle-fill text-success me-1"></i> Easy booking</span>
+          <span><i class="bi bi-check-circle-fill text-success me-1"></i> Digital receipt</span>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="hero-card">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div><div class="small-label">Today</div><div class="fw-bold fs-5">City Center Parking</div></div>
+            <span class="badge badge-soft badge-available">32 slots free</span>
+          </div>
+          <div class="map-placeholder" style="min-height:330px">
+            <div class="parking-lot"></div>
+            <div class="map-spot avail" style="left:17%;top:19%">A01</div>
+            <div class="map-spot occ" style="left:32%;top:19%">A02</div>
+            <div class="map-spot avail" style="left:47%;top:19%">A03</div>
+            <div class="map-spot res" style="left:62%;top:19%">A04</div>
+            <div class="map-spot avail" style="left:17%;top:57%">B01</div>
+            <div class="map-spot occ" style="left:32%;top:57%">B02</div>
+            <div class="map-spot avail" style="left:47%;top:57%">B03</div>
+            <div class="map-spot avail" style="left:62%;top:57%">B04</div>
+            <div class="position-absolute bottom-0 start-0 p-3 small">
+              <span class="me-3"><i class="bi bi-square-fill text-success"></i> Available</span>
+              <span class="me-3"><i class="bi bi-square-fill text-danger"></i> Occupied</span>
+              <span><i class="bi bi-square-fill text-warning"></i> Reserved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-strip">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-md-3"><div class="stat-card"><div class="stat-icon"><i class="bi bi-p-square"></i></div><div class="stat-value">120+</div><div class="text-muted-custom">Parking Slots</div></div></div>
+      <div class="col-md-3"><div class="stat-card"><div class="stat-icon"><i class="bi bi-geo-alt"></i></div><div class="stat-value">8</div><div class="text-muted-custom">Parking Zones</div></div></div>
+      <div class="col-md-3"><div class="stat-card"><div class="stat-icon"><i class="bi bi-people"></i></div><div class="stat-value">2.4K+</div><div class="text-muted-custom">Registered Users</div></div></div>
+      <div class="col-md-3"><div class="stat-card"><div class="stat-icon"><i class="bi bi-shield-check"></i></div><div class="stat-value">99.9%</div><div class="text-muted-custom">System Uptime</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section-pad">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="small-label">Why ParkEase</span>
+      <h2 class="section-title display-6 mt-2">Everything needed for smart parking</h2>
+      <p class="text-muted-custom mx-auto" style="max-width:680px">Designed as a clean college-project frontend that can be connected to your backend APIs later.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3"><div class="feature-card"><div class="feature-icon mb-3"><i class="bi bi-broadcast-pin"></i></div><h5>Live Slot Status</h5><p class="text-muted-custom mb-0">See available, occupied and reserved slots at a glance.</p></div></div>
+      <div class="col-md-6 col-lg-3"><div class="feature-card"><div class="feature-icon mb-3"><i class="bi bi-calendar-check"></i></div><h5>Quick Booking</h5><p class="text-muted-custom mb-0">Reserve a slot before you reach the parking area.</p></div></div>
+      <div class="col-md-6 col-lg-3"><div class="feature-card"><div class="feature-icon mb-3"><i class="bi bi-credit-card-2-front"></i></div><h5>Digital Payment</h5><p class="text-muted-custom mb-0">Clean payment screen with an instant booking summary.</p></div></div>
+      <div class="col-md-6 col-lg-3"><div class="feature-card"><div class="feature-icon mb-3"><i class="bi bi-clock-history"></i></div><h5>Parking History</h5><p class="text-muted-custom mb-0">Keep a record of previous reservations and payments.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad pt-0">
+  <div class="container">
+    <div class="panel p-4 p-lg-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <span class="badge badge-soft bg-soft text-primary mb-2">College Minor Project</span>
+          <h3 class="fw-bold">Ready for your backend integration</h3>
+          <p class="text-muted-custom mb-0">Use this frontend with Flask, PHP, Node.js/Express, Spring Boot or any REST API backend.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end"><a href="dashboard.html" class="btn btn-primary-custom">Open Demo Dashboard</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-5"><div class="d-flex align-items-center gap-2 mb-3"><span class="brand-mark"><i class="bi bi-p-square-fill"></i></span><span class="text-white fw-bold fs-5">ParkEase</span></div><p class="mb-0">Smart Parking Management System frontend for academic projects.</p></div>
+      <div class="col-6 col-lg-3"><h6 class="text-white">Quick Links</h6><div class="d-flex flex-column gap-2 mt-3"><a href="parking.html">Find Parking</a><a href="dashboard.html">Dashboard</a><a href="history.html">History</a></div></div>
+      <div class="col-6 col-lg-4"><h6 class="text-white">Account</h6><div class="d-flex flex-column gap-2 mt-3"><a href="login.html">Login</a><a href="register.html">Register</a><a href="profile.html">Profile</a></div></div>
+    </div>
+    <hr class="border-secondary my-4">
+    <div class="small">© <span data-year></span> ParkEase. Frontend demo.</div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

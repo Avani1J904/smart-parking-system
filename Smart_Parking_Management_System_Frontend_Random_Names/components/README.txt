@@ -1,0 +1,1 @@
+Reusable UI structure is duplicated directly into pages for static hosting simplicity.

@@ -1,0 +1,1 @@
+Image folder reserved for future logos, maps, icons or project screenshots.
